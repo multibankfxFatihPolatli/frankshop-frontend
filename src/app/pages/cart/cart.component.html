@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row" *ngFor="let item of vehicleList">
+    <div class="col-sm">{{ item.make }}</div>
+    <div class="col-sm">{{ item.model }}</div>
+    <div class="col-sm">
+      {{ item.price }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm"><b>TOTAL</b></div>
+    <div class="col-sm"></div>
+    <div class="col-sm">
+      <b>{{ totalPrice }}</b>
+    </div>
+  </div>
+</div>

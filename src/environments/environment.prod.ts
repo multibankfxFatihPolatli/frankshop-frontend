@@ -1,0 +1,6 @@
+export const environment = {
+  production: true,
+  apiUrl: 'http://localhost:8080',
+  jwtSecret: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE2MTA4NzcxMjcsImV4cCI6MTY0MjQxMzEyNywiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoiMTExMTEiLCJHaXZlbk5hbWUiOiJKb2hubnkiLCJTdXJuYW1lIjoiUm9ja2V0IiwiRW1haWwiOiJqcm9ja2V0QGV4YW1wbGUuY29tIiwiUm9sZSI6WyJNYW5hZ2VyIiwiUHJvamVjdCBBZG1pbmlzdHJhdG9yIl19.iPE5UA2T29fUWgOEkSchIXeW8VTZPmWWdkL18a4eHpA',
+
+};

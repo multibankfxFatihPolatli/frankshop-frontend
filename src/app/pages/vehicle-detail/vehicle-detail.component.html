@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <b>car name</b>
+    </div>
+    <div class="col-sm">
+      {{ vehicleDetail?.make }} {{ vehicleDetail?.model }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <b>year</b>
+    </div>
+    <div class="col-sm">
+      {{ vehicleDetail?.year }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <b>price</b>
+    </div>
+    <div class="col-sm">
+      {{ vehicleDetail?.price }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <b>waerhouse</b>
+    </div>
+    <div class="col-sm">
+      {{ wearhouse?.name }} {{ wearhouse?.cars?.location }}
+    </div>
+  </div>
+</div>
+
+<div class="container" *ngIf="vehicleDetail?.licensed">
+  <div class="row" *ngIf="!isAlreadyInCart">
+    <button (click)="addToCart()" value="add to basket">+ add to cart</button>
+  </div>
+  <div class="row" *ngIf="isAlreadyInCart">
+    <button (click)="removeFromCart()" value="add to basket">
+      - remove from cart
+    </button>
+  </div>
+</div>
